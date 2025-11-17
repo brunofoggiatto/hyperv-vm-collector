@@ -1,2 +1,18 @@
-# hyperv-vm-collector
-This project provides a simple and secure Python tool to query multiple Hyper-V servers using WinRM, gathering details such as VM name, state, RAM, CPU count, and IP addresses. It’s ideal for system administrators who need to centralize virtual machine information across different hosts without relying on external management consoles.
+# Hyper-V VM Collector
+
+A Python script that collects virtual machine (VM) information from multiple **Hyper-V** servers via **WinRM**.
+
+## Features
+
+- Connects to multiple hosts using WinRM (NTLM authentication)  
+- Lists each VM’s name, state, RAM, CPU count, and IP addresses  
+- Displays a unified (cluster-like) overview of all VMs  
+- Simple configuration through a `config.json` file  
+
+## Requirements
+
+- Python 3.8 or higher  
+- `pywinrm` module  
+
+```bash
+pip install -r requirements.txt
